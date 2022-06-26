@@ -2,11 +2,17 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.box, .footer{
     display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px; 
+    color: #e5e7eb;
 }
 
 /* BOX ONE */
@@ -59,13 +65,18 @@ ul {
 .box.one button {
     height: 40px;
     width: 120px;
-    background-color: #3883f6;
-    color: white;
+    background-color: #3882f6;
+    color: #e5e7eb;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px;
     border: none;
+}
+
+.box.one button:hover {
+    background-color: #e5e7eb;
+    color: #3882f6;
 }
 
 .box.one div.left, .box.one div.right {
@@ -92,16 +103,120 @@ ul {
 
 /* BOX TWO */
 
-div.box.two {}
+.infor {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 50px 0px;
+}
+
+div.box.two {
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageRow {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    gap: 70px;
+    margin-bottom: 50px;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-width: medium;
+    border-color: #3883f6;
+    border-radius: 15px;
+}
+
+.imageRow div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.imageRow p {
+    text-align: center;
+}
 
 /* BOX THREE */
 
-div.box.three {}
+div.box.three {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+}
+
+div.box.three p {
+    margin: 0px;
+    display: flex;
+    width: 55%;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: light;
+}
+
+div.box.three div {
+    display: flex;
+    width: 55%;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /* BOX FOUR */
 
-div.box.four {}
+div.box.four {
+    display: flex;
+    justify-content: center;
+}
+
+.blueBox {
+    margin: 120px 0px;
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 12px;
+    padding: 60px 130px;
+    gap: 170px
+}
+
+.blueBox .left, .blueBox .right {
+    color: #f9faf8;
+}
+
+.blueBox .left div {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.blueBox button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3882f6;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 12px;
+    padding: 0px 25px;
+}
+
+.blueBox button:hover {
+    background-color: white;
+    color: #3882f6;
+}
 
 /* FOOTER */
 
-div.footer {}
+div.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 15px;
+}
